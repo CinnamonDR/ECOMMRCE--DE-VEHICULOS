@@ -1,0 +1,121 @@
+:root {
+    --accent-color: #d4af37; /* Dorado */
+    --dark-bg: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #ffffff;
+    --text-muted: #b0b0b0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+}
+
+/* Navbar sofisticada */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-main) !important;
+}
+
+.navbar-brand i {
+    color: var(--accent-color);
+}
+
+/* Banner con filtro oscuro para que resalte el texto */
+.hero-banner {
+    height: 50vh;
+    background-image: url('https://t4.ftcdn.net/jpg/02/82/00/75/360_F_282007508_wdCUP7hUMNK1Cuzj7XmOcFmzyzJ0Nnp9.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 56px;
+}
+
+.hero-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), var(--dark-bg));
+    height: 100%;
+}
+
+/* Tarjetas Estilo Dark Mode */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid #333;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.card-title {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.text-primary {
+    color: var(--accent-color) !important;
+}
+
+/* Botones Personalizados */
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #f1c40f;
+    color: #000;
+}
+
+.btn-outline-dark {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+/* Modales Dark */
+.modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border: 1px solid var(--accent-color);
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.list-group-item {
+    background-color: #2a2a2a;
+    color: var(--text-main);
+    border: 1px solid #444;
+}
+
+/* Spinner */
+.spinner-border {
+    color: var(--accent-color) !important;
+}
+
+/* Buscador */
+#searchInput {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+}
+
+#searchInput::placeholder {
+    color: var(--text-muted);
+}
